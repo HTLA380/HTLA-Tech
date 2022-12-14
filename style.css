@@ -1,0 +1,406 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow:wght@600&family=Fraunces:opsz,wght@9..144,700;9..144,900&display=swap");
+
+:root {
+  /* primary */
+  --Soft-red: hsl(7, 99%, 70%);
+  --Yellow: hsl(51, 100%, 49%);
+  --Dark-desaturated-cyan: hsl(167, 40%, 24%);
+  --footer-color: #2a7362;
+  /*graphic design text */
+  --Dark-moderate-cyan: #90d4c5;
+  /* footer */
+  --Dark-blue: hsl(198, 62%, 26%);
+  /* photography text */
+
+  /* neutral */
+  --Very-dark-desaturated-blue: hsl(212, 27%, 19%);
+  --Very-dark-grayish-blue: hsl(213, 9%, 39%);
+  --Dark-grayish-blue: hsl(232, 10%, 55%);
+  --Grayish-blue: hsl(210, 4%, 67%);
+  --White: hsl(0, 0%, 100%);
+
+  /* height */
+  --max-height: 65vh;
+}
+
+/* hiding the scroll bar */
+::-webkit-scrollbar {
+  display: none;
+}
+
+html,
+body {
+  width: 100vw;
+  overflow-x: hidden;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: rgb(226, 226, 226);
+  font-family: "Barlow", sans-serif;
+}
+
+.header {
+  height: 700px;
+  background-position: center;
+  background-size: cover;
+  color: var(--White);
+  padding: 40px 20px;
+}
+
+.logo {
+  width: 250px;
+}
+
+li {
+  margin: 0 18px;
+  font-size: 20px;
+  list-style: none;
+}
+
+li > a {
+  color: var(--White);
+  text-decoration: none;
+}
+
+.contact {
+  background-color: var(--White);
+  color: var(--Very-dark-desaturated-blue);
+}
+
+.btn {
+  padding: 10px 15px;
+  border-radius: 30px;
+}
+
+/* Fraunces FONT */
+.client-name,
+.client-testimonial h4,
+.text-overlay h3,
+.learn-more,
+.text-detail-title,
+.contact,
+.title {
+  font-family: "Fraunces";
+}
+
+/* page title */
+.title {
+  letter-spacing: 8px;
+  font-size: 3rem;
+}
+
+/* text-detail */
+.text-detail {
+  background-color: var(--White);
+  padding: 100px;
+}
+
+.content-section img {
+  object-fit: cover;
+  object-position: center;
+}
+
+.text-detail-title {
+  font-size: 2.7rem;
+}
+
+.text-detail p {
+  font-size: 18px;
+  color: var(--Dark-grayish-blue);
+}
+
+.learn-more {
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+@media (max-width: 1200px) {
+  .text-detail {
+    padding: 50px;
+  }
+}
+
+@media (max-width: 1000px) {
+  .text-detail {
+    padding: 30px;
+  }
+
+  .text-detail-title {
+    font-size: 2.25rem;
+  }
+
+  .text-detail h5 {
+    font-size: 1.35rem;
+  }
+}
+
+@media (max-width: 900px) {
+  .text-detail {
+    padding: 30px;
+  }
+
+  .text-detail-title {
+    font-size: 2rem;
+  }
+
+  .text-detail p {
+    font-size: 17px;
+  }
+
+  .text-detail h5 {
+    font-size: 1rem;
+  }
+
+  .logo {
+    width: 200px;
+  }
+
+  .text-overlay h3 {
+    margin: 20px 0 !important;
+    font-size: 1.4rem;
+  }
+
+  .text-overlay p {
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 700px) {
+  .text-detail {
+    padding: 25px;
+  }
+
+  .logo {
+    width: 150px;
+  }
+
+  .text-detail-title {
+    font-size: 1.5rem;
+  }
+
+  .text-detail p {
+    font-size: 13px;
+  }
+
+  .text-overlay h3 {
+    margin: 10px 0 !important;
+    font-size: 1.4rem;
+  }
+
+  .text-overlay p {
+    font-size: 14px;
+    line-height: 1.3;
+    margin: 0 !important;
+  }
+
+  .title {
+    font-size: 3rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .text-detail-title {
+    font-size: 1.15rem;
+  }
+
+  .text-detail p {
+    font-size: 13px;
+  }
+
+  .text-overlay h3 {
+    font-size: 1rem;
+  }
+
+  .text-overlay p {
+    font-size: 10px;
+    line-height: 1;
+  }
+}
+
+/* .text-overlay */
+.img-section-container {
+  position: relative;
+}
+
+.photorow img,
+.img-section-container img {
+  width: 100%;
+}
+
+.text-overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  bottom: 0;
+  left: 0;
+  padding: 5% 15%;
+  text-align: center;
+}
+
+.graphic-design p,
+.graphic-design h3 {
+  color: var(--Dark-desaturated-cyan) !important;
+}
+
+.photography p,
+.photography h3 {
+  color: var(--Dark-blue) !important;
+}
+
+/* client testmonial */
+.client-testimonial {
+  padding: 100px 100px 70px;
+  background-color: var(--White);
+}
+
+.client-testimonial h4 {
+  letter-spacing: 6px;
+  font-size: 1.4rem;
+  color: var(--Grayish-blue);
+  margin-bottom: 50px;
+}
+
+.client-profile-pic {
+  width: 80px;
+  border-radius: 50%;
+}
+
+.client-testimonial p {
+  color: var(--Very-dark-grayish-blue);
+}
+
+.text-detail-title,
+.learn-more,
+.client-name {
+  font-weight: 800;
+}
+
+.client-profession {
+  opacity: 0.65;
+}
+
+/* menu for tablet and phone size */
+.menu-active {
+  position: absolute;
+  top: 58px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: var(--White);
+  width: 100%;
+  text-align: center;
+  padding: 60px 20px 20px 20px;
+  clip-path: polygon(0 12%, 90% 12%, 100% 0, 100% 100%, 0 100%, 0% 50%);
+}
+
+.menu-active li {
+  margin: 25px 0 !important;
+}
+
+.menu-active .contact {
+  background-color: var(--Yellow);
+}
+
+@media (min-width: 600px) {
+  .menu-active {
+    width: 50vw;
+    right: 0;
+    transform: translateX(0);
+  }
+}
+
+.menu-active ul li a {
+  color: var(--Grayish-blue);
+}
+
+li:hover {
+  color: var(--Dark-blue);
+}
+
+.contact:hover {
+  color: var(--White);
+  background-color: #6fcfff;
+}
+
+/* footer */
+.footer {
+  background-color: var(--Dark-moderate-cyan);
+  backface-visibility: hidden;
+}
+
+.footer-ul li a {
+  color: var(--footer-color);
+  font-size: 1rem;
+}
+
+.footer-logo {
+  filter: invert(30%) sepia(12%) saturate(2200%) hue-rotate(116deg)
+    brightness(55%) contrast(84%);
+}
+
+@media (max-width: 575px) {
+  .content-section img {
+    height: 300px;
+  }
+
+  .title {
+    font-size: 2rem;
+  }
+  .text-detail {
+    padding: 50px;
+  }
+
+  .text-detail-title {
+    font-size: 2rem;
+  }
+
+  .text-detail p {
+    margin: 20px 0;
+    font-size: 17px;
+    line-height: 1.6;
+  }
+
+  .text-detail h5 {
+    margin: 15px auto !important;
+    font-size: 1.1rem;
+  }
+
+  .text-overlay {
+    padding: 35px !important;
+  }
+
+  .text-overlay h3 {
+    font-size: 1.8rem;
+    margin: 20px 0 !important;
+  }
+
+  .text-overlay p {
+    font-size: 15px;
+    line-height: 1.5;
+  }
+
+  .client-testimonial {
+    padding: 60px 30px 0px 30px;
+  }
+
+  .each-client {
+    margin-bottom: 40px;
+  }
+
+  .client-testimonial h4 {
+    font-size: 1.1rem;
+    letter-spacing: 4px;
+    margin-bottom: 40px;
+  }
+
+  .client-profile-pic {
+    width: 70px;
+  }
+
+  .each-client .client-response {
+    margin: 20px 0 30px !important;
+  }
+}
